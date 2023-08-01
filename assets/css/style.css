@@ -1,0 +1,126 @@
+/*-----Fonts-----*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/*-----Global-----*/
+:root {
+  --main-color: #318dc6;
+  --color-1: #ff0055;
+  --color-2: #f5ae10;
+  --color-3: #09d69c;
+  --bg-dark: #2b2c2f;
+  --main-t0-dark-color: var(--main-color);
+  --dark-to-main-color: var(---bg-dark);
+  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+  --black-900: #000000;
+  --black-400: #555555;
+  --black-100: #f7f7f7;
+  --black-000: #ffffff;
+  --black-alpha--100: rgba(0, 0, 0, 0.05);
+}
+
+/*-----Place-----*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--main-t0-dark-color);
+}
+
+.place {
+  background-position: center top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.place .section-tittle h2 {
+  color: #ffffff;
+}
+
+.place::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.place-item {
+  background-color: var(--black-000);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: var(--shadow-black-100);
+}
+
+.place-item i {
+  font-size: 30px;
+  display: inline-block;
+}
+
+.place-item h3 {
+  font-size: 22px;
+  color: var(--black-900);
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.place-item h6 {
+  font-size: 16px;
+  color: var(--black-400);
+  font-weight: 300;
+  margin: 0 0 5px;
+  line-height: 26px;
+}
+
+.place-item p {
+  font-size: 16px;
+  color: var(--black-400);
+  font-weight: 300;
+  margin: 0 0 5px;
+  line-height: 26px;
+}
+
+.place-item a {
+  font-size: 16px;
+  color: var(--black-400);
+  font-weight: 300;
+  margin: 0 0 50px;
+  line-height: 26px;
+}
+
+.img-1 {
+  margin: auto;
+}
+
+.box {
+  background-color: var(--main-t0-dark-color);
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 380px;
+  margin: 6px;
+}
+
+.canvas {
+  margin: auto;
+  width: 700px;
+  height: 500px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.button1 {
+  background-color: #ffffff;
+  width: 500px;
+  height: 100px;
+  margin: auto;
+  padding: 15px;
+  margin-bottom: 10;
+}/*# sourceMappingURL=style.css.map */
